@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-repeat: none; */
+}
+
+.container{
+    /* background: url(/Assets/Aesthetic\ Art\ \(1\).jpeg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: cornsilk;
+}
+form{
+    backdrop-filter: blur(40px);
+    border: 2px #c76e40 solid;
+    border-radius: 1.5rem;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    cursor: pointer;
+}
+form:hover{
+    backdrop-filter: blur(14px);
+}
+
+form h1{
+    color: rgb(13, 13, 12);
+}
+
+form .form-body{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form .form-body .form-control{ 
+    width: 100%;
+    background-color: transparent;
+    border: 3px #c76e40 solid;
+    display: flex;
+    flex-direction: column;
+    height: 4.5rem;
+    border-radius: 2rem;
+    position: relative;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+form .form-body .form-control label{ 
+ position: absolute;  
+ font-size: 1.4rem;
+ padding: 0 1.5rem;
+ color: #ffff;
+ opacity: 0;
+ cursor: text;
+}
+
+form .form-body .form-control input{ 
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    padding: 0 1.5rem;
+    color: rgb(15, 15, 14);
+    transition: 0.5s;
+    background: transparent;
+}
+
+form .form-body .form-control input:focus{ 
+    border-width: 5px;
+}
+
+form .form-body .form-control input:focus ~ label{ 
+    opacity: 1;
+    top: -13px;
+    left: 15px;
+    background: #c76e40;
+    border-radius: 2rem;
+    padding: 1.5px 20px;
+    transition: 0.5s;
+}
+
+form .form-body .form-control input::placeholder{ 
+    font-size: 1.4rem;
+    color: rgb(18, 18, 17);
+}
+
+.login-btn{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    border: 3px solid #c76e40;
+    border-radius: 2rem;
+    height: 4.5rem;
+    color: #000000;
+    background: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+}
+
+.login-btn::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    justify-self: start;
+    background: #c76e40;
+    border-radius: 2rem;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.login-btn:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.login-btn:hover{
+    color: #ffffff;
+    transition: 0.5s;
+}

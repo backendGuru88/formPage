@@ -1,0 +1,27 @@
+*{
+    background-image: url(/static/Assets/img/Aesthetic\ Art\ \(1\).jpeg);
+    /* color: black;
+    background-repeat: none;
+    background-position: center; */
+
+    
+   
+}
+
+h1{
+    text-align: center;
+    color: #ffff;
+    font-weight: 34px;
+    font-size:50px;
+    background: transparent;
+}
+h4{
+    text-align: center;
+    color: #ffff;
+    background: transparent;
+}
+.direction{
+    color:cornsilk;
+    direction: left;
+    font-size: 20px;
+}

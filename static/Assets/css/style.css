@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #ffff;
+}
+.heading {
+    text-align: center;
+    padding: 50px 0 20px;
+}
+
+.heading h1{
+    margin: 0;
+    padding: 0;
+    color: #262626;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.container{
+    width:50%;
+    height: 400px;
+    background: #ffff;
+    margin: 0 auto;
+    border: 2px solid white;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
+}
+
+.container .left{
+    float: left;
+    width: 50%;
+    height: 400px;
+    background: url(/static/Assets/img/Aesthetic\ Art\ \(1\).jpeg);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.container .right{
+    float: right;
+    width: 50%;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.form_content{
+    width: 100%;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    height: 400px;
+}
+
+.form_content p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #000;
+}
+
+.form_content input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input[type="text"], input[type="password"]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000;
+    height: 40px;
+}
+input[type="text"]:focus, input[type="password"]:focus{
+    border-bottom: 2px solid #5f68e5;
+}
+
+input[type="submit"]{
+    border: none;
+    background-color: #c76e40;
+    height: 40px;
+    width: 150px;
+    border-radius: 9px;
+}
+input[type="button"]:hover{
+    background-color: #000;
+    color: white;
+    transition: .8s ease-in-out;
+}
+form a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold; 
+}
+form a:hover{
+    color: #5f68e5;
+    transition: 1s;
+}
+.popup {
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #3333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    background-color: #ffff;
+}
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #5f68e5;
+    border: none;
+    outline: none;
+}
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
